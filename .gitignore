@@ -7,3 +7,15 @@ __pycache__/
 .vscode/
 .idea/
 .env
+
+
+# ChromaDB generated files
+vector_db/*
+!vector_db/.gitkeep
+
+# NumPy embeddings
+Data/Embeddings/*.npy
+
+# Python cache
+__pycache__/
+*.pyc
