@@ -1,25 +1,25 @@
-sentence-transformers==5.1.0
+# ── Web framework ──────────────────────────────────────────────
+fastapi==0.115.6
+uvicorn[standard]==0.34.0
+python-multipart==0.0.20
 
-torch
+# ── Database ───────────────────────────────────────────────────
+motor==3.6.0
+pymongo==4.9.2
 
-transformers
+# ── Validation / settings ─────────────────────────────────────
+pydantic==2.10.4
+pydantic-settings==2.7.0
+email-validator==2.2.0
 
-chromadb
+# ── Files ──────────────────────────────────────────────────────
+aiofiles==24.1.0
 
-spacy
+# ── Security ───────────────────────────────────────────────────
+bcrypt==4.2.1
 
-numpy
-
-pandas
-
-pymupdf
-
-python-docx
-
-fastapi
-
-uvicorn
-
-tqdm
-
-scikit-learn
+# ── Testing (dev) ──────────────────────────────────────────────
+pytest==8.3.4
+pytest-asyncio==0.25.0
+httpx==0.28.1
+mongomock-motor==0.0.34

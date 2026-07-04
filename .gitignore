@@ -1,9 +1,31 @@
-venv/
+# Python
 __pycache__/
-*.pyc
-*.pkl
-*.npy
-*.log
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+
+# Environment
+.env
+!.env.example
+
+# Uploaded / generated files
+uploads/*
+!uploads/.gitkeep
+reports/*
+!reports/.gitkeep
+logs/*
+!logs/.gitkeep
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE / OS
 .vscode/
 .idea/
-.env
+.DS_Store
