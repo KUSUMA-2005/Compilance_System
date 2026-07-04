@@ -1,0 +1,258 @@
+[
+    {
+        "id": "IN-DP-1",
+        "country": "India",
+        "law": "Digital Personal Data Protection Act, 2023",
+        "category": "Data Privacy",
+        "risk": "High",
+        "text": "Consent to process personal data must be free, specific, informed, unconditional, and unambiguous, given through a clear affirmative action, and limited to the data necessary for the specified purpose (Section 6)."
+    },
+    {
+        "id": "IN-DP-2",
+        "country": "India",
+        "law": "Digital Personal Data Protection Act, 2023",
+        "category": "Data Privacy",
+        "risk": "Medium",
+        "text": "A Data Principal has the right to withdraw consent at any time, with the withdrawal process being as easy as giving consent; withdrawal does not affect the legality of prior processing (Section 6(4)-(5))."
+    },
+    {
+        "id": "IN-DP-3",
+        "country": "India",
+        "law": "Digital Personal Data Protection Act, 2023",
+        "category": "Data Privacy",
+        "risk": "Medium",
+        "text": "Personal data may be processed without consent under a closed list of nine 'legitimate uses' specified in the Act, such as the State providing a subsidy, benefit, or service to the Data Principal (Section 7)."
+    },
+    {
+        "id": "IN-DP-4",
+        "country": "India",
+        "law": "Digital Personal Data Protection Act, 2023",
+        "category": "Data Privacy",
+        "risk": "High",
+        "text": "Before processing the personal data of a child or a person with a disability, the Data Fiduciary must obtain verifiable consent from the parent or lawful guardian (Section 9(1))."
+    },
+    {
+        "id": "IN-CY-1",
+        "country": "India",
+        "law": "Information Technology Act, 2000",
+        "category": "Cybersecurity",
+        "risk": "Critical",
+        "text": "A body corporate that possesses or handles sensitive personal data must implement and maintain reasonable security practices and procedures; negligence resulting in wrongful loss or gain makes it liable to pay compensation (Section 43A)."
+    },
+    {
+        "id": "IN-CY-2",
+        "country": "India",
+        "law": "Information Technology Act, 2000",
+        "category": "Cybersecurity",
+        "risk": "High",
+        "text": "Unauthorized access to, or downloading, copying, or damaging of, a computer, computer system, or computer network attracts penalty and compensation liability (Section 43)."
+    },
+    {
+        "id": "IN-CY-3",
+        "country": "India",
+        "law": "Information Technology Act, 2000",
+        "category": "Cybersecurity",
+        "risk": "Critical",
+        "text": "Dishonestly or fraudulently committing any act specified under Section 43 (e.g. hacking, data theft) is a punishable criminal offence (Section 66)."
+    },
+    {
+        "id": "IN-CY-4",
+        "country": "India",
+        "law": "Information Technology Act, 2000",
+        "category": "Cybersecurity",
+        "risk": "High",
+        "text": "Disclosure of personal information obtained under a lawful contract, made without the consent of the person concerned and with intent to cause wrongful loss, is punishable with imprisonment or fine (Section 72A)."
+    },
+    {
+        "id": "IN-FI-1",
+        "country": "India",
+        "law": "Prevention of Money Laundering Act, 2002",
+        "category": "Finance",
+        "risk": "High",
+        "text": "At the commencement of an account-based relationship involving Rs. 50,000 or more, reporting entities must conduct customer due diligence, including verifying the client's identity, source of funds, and the purpose of the relationship (PML Rule 9(1))."
+    },
+    {
+        "id": "IN-FI-2",
+        "country": "India",
+        "law": "Prevention of Money Laundering Act, 2002",
+        "category": "Finance",
+        "risk": "Medium",
+        "text": "Reporting entities must maintain records of all transactions, including the identity of the parties and the nature and value of each transaction, for the period prescribed under the Act."
+    },
+    {
+        "id": "IN-FI-3",
+        "country": "India",
+        "law": "Prevention of Money Laundering Act, 2002",
+        "category": "Finance",
+        "risk": "Medium",
+        "text": "Where enhanced due diligence is applied to a suspicious or high-risk client relationship, the information obtained must be retained for five years from the date of the transaction."
+    },
+    {
+        "id": "AE-DP-1",
+        "country": "UAE",
+        "law": "Federal Decree-Law No. 45 of 2021 (Personal Data Protection Law)",
+        "category": "Data Privacy",
+        "risk": "High",
+        "text": "Processing personal data without the consent of the data subject is prohibited, except in specified cases such as public interest, legitimate claims, or legal obligations."
+    },
+    {
+        "id": "AE-DP-2",
+        "country": "UAE",
+        "law": "Federal Decree-Law No. 45 of 2021 (Personal Data Protection Law)",
+        "category": "Data Privacy",
+        "risk": "Medium",
+        "text": "Controllers must appoint a Data Protection Officer where processing involves large-scale sensitive personal data or systematic monitoring of data subjects."
+    },
+    {
+        "id": "AE-DP-3",
+        "country": "UAE",
+        "law": "Federal Decree-Law No. 45 of 2021 (Personal Data Protection Law)",
+        "category": "Data Privacy",
+        "risk": "High",
+        "text": "Personal data may only be transferred outside the UAE where the recipient jurisdiction ensures an adequate level of protection, or a specific exception applies (e.g. the transfer is necessary to establish or defend a legal claim)."
+    },
+    {
+        "id": "AE-DP-4",
+        "country": "UAE",
+        "law": "Federal Law No. 15 of 2020 (Consumer Protection Law)",
+        "category": "Data Privacy",
+        "risk": "Medium",
+        "text": "Suppliers are prohibited from using consumers' personal data for marketing purposes without their consent."
+    },
+    {
+        "id": "AE-DP-5",
+        "country": "UAE",
+        "law": "Federal Decree-Law No. 44 of 2021 (Establishment of the UAE Data Office)",
+        "category": "Data Privacy",
+        "risk": "Low",
+        "text": "The UAE Data Office is established as the federal authority responsible for overseeing and enforcing compliance with the Personal Data Protection Law."
+    },
+    {
+        "id": "AE-CY-1",
+        "country": "UAE",
+        "law": "Federal Decree-Law No. 34 of 2021 (Cybercrimes Law)",
+        "category": "Cybersecurity",
+        "risk": "Critical",
+        "text": "Unauthorized access to, or interference with, a website or electronic information system is a criminal offense; organizations must implement safeguards to prevent unauthorized intrusion."
+    },
+    {
+        "id": "AE-CY-2",
+        "country": "UAE",
+        "law": "Central Bank of the UAE — Information Security Standards",
+        "category": "Cybersecurity",
+        "risk": "High",
+        "text": "Banks and other regulated financial institutions must implement information security controls to protect the confidentiality and integrity of banking information, as directed by the Central Bank (a sector-level requirement rather than a single named statute)."
+    },
+    {
+        "id": "AE-FI-1",
+        "country": "UAE",
+        "law": "Federal Decree-Law No. 10 of 2025 (Anti-Money Laundering, Combating the Financing of Terrorism and Proliferation Financing)",
+        "category": "Finance",
+        "risk": "High",
+        "text": "Financial institutions and designated non-financial businesses must conduct Customer Due Diligence (CDD) to identify and verify customers and beneficial owners before establishing a business relationship, and report suspicious transactions."
+    },
+    {
+        "id": "AE-FI-2",
+        "country": "UAE",
+        "law": "Federal Decree-Law No. 10 of 2025 (Anti-Money Laundering, Combating the Financing of Terrorism and Proliferation Financing)",
+        "category": "Finance",
+        "risk": "High",
+        "text": "Knowingly providing false or misleading information about a Beneficial Owner to a competent authority or financial institution is punishable by imprisonment and a fine of not less than AED 20,000."
+    },
+    {
+        "id": "AE-FI-3",
+        "country": "UAE",
+        "law": "Federal Decree-Law No. 10 of 2025 (Anti-Money Laundering, Combating the Financing of Terrorism and Proliferation Financing)",
+        "category": "Finance",
+        "risk": "High",
+        "text": "Financial institutions must report suspicious transactions to the UAE Financial Intelligence Unit for analysis and referral to the competent authorities."
+    },
+    {
+        "id": "SG-DP-1",
+        "country": "Singapore",
+        "law": "Personal Data Protection Act 2012 (PDPA)",
+        "category": "Data Privacy",
+        "risk": "Critical",
+        "text": "Organisations must notify the Personal Data Protection Commission (PDPC) as soon as practicable, and no later than 3 calendar days, after determining that a data breach is notifiable."
+    },
+    {
+        "id": "SG-DP-2",
+        "country": "Singapore",
+        "law": "Personal Data Protection Act 2012 (PDPA)",
+        "category": "Data Privacy",
+        "risk": "High",
+        "text": "A data breach is notifiable if it results in, or is likely to result in, significant harm to an affected individual, or if it affects, or is likely to affect, 500 or more individuals."
+    },
+    {
+        "id": "SG-DP-3",
+        "country": "Singapore",
+        "law": "Personal Data Protection Act 2012 (PDPA)",
+        "category": "Data Privacy",
+        "risk": "Medium",
+        "text": "Organisations may rely on 'deemed consent by notification' or 'deemed consent by contractual necessity' as alternative bases for processing personal data, subject to providing notice and an opt-out period."
+    },
+    {
+        "id": "SG-DP-4",
+        "country": "Singapore",
+        "law": "Personal Data Protection Act 2012 (PDPA)",
+        "category": "Data Privacy",
+        "risk": "High",
+        "text": "Serious breaches of the PDPA may result in financial penalties of up to S$1 million or 10% of the organisation's annual turnover in Singapore, whichever is higher."
+    },
+    {
+        "id": "SG-CY-1",
+        "country": "Singapore",
+        "law": "Cybersecurity Act 2018",
+        "category": "Cybersecurity",
+        "risk": "High",
+        "text": "Owners of Critical Information Infrastructure (CII) must comply with cybersecurity codes of practice, conduct regular audits and risk assessments, and report cybersecurity incidents to the Cyber Security Agency (CSA)."
+    },
+    {
+        "id": "SG-CY-2",
+        "country": "Singapore",
+        "law": "Cybersecurity Act 2018",
+        "category": "Cybersecurity",
+        "risk": "Critical",
+        "text": "Owners of Critical Information Infrastructure must report a prescribed cybersecurity incident to the Commissioner of Cybersecurity within the prescribed period (Section 14(1))."
+    },
+    {
+        "id": "SG-CY-3",
+        "country": "Singapore",
+        "law": "Cybersecurity (Amendment) Act 2024",
+        "category": "Cybersecurity",
+        "risk": "Medium",
+        "text": "The Act extends cybersecurity obligations to Systems of Temporary Cybersecurity Concern (STCC) and Entities of Special Cybersecurity Interest (ESCI), in addition to traditional Critical Information Infrastructure owners."
+    },
+    {
+        "id": "SG-FI-1",
+        "country": "Singapore",
+        "law": "MAS Notice 626 (Prevention of Money Laundering and Countering the Financing of Terrorism – Banks)",
+        "category": "Finance",
+        "risk": "High",
+        "text": "Banks must conduct risk-based Customer Due Diligence, including identifying and verifying customers and beneficial owners, and file Suspicious Transaction Reports with the Suspicious Transaction Reporting Office (STRO)."
+    },
+    {
+        "id": "SG-FI-2",
+        "country": "Singapore",
+        "law": "MAS Notice 626 (Prevention of Money Laundering and Countering the Financing of Terrorism – Banks)",
+        "category": "Finance",
+        "risk": "High",
+        "text": "A Suspicious Transaction Report must be filed no later than 1 business day after the bank concludes that filing is warranted."
+    },
+    {
+        "id": "SG-FI-3",
+        "country": "Singapore",
+        "law": "MAS Notice 626 (Prevention of Money Laundering and Countering the Financing of Terrorism – Banks)",
+        "category": "Finance",
+        "risk": "Medium",
+        "text": "Banks must retain customer due diligence and transaction records for five years from the end of the customer relationship."
+    },
+    {
+        "id": "SG-FI-4",
+        "country": "Singapore",
+        "law": "MAS Notice 626 (Prevention of Money Laundering and Countering the Financing of Terrorism – Banks)",
+        "category": "Finance",
+        "risk": "High",
+        "text": "Enhanced Due Diligence must be applied to higher-risk relationships, including politically exposed persons, customers from high-risk jurisdictions, and complex ownership structures."
+    }
+]

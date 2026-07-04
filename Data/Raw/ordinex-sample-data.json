@@ -1,0 +1,874 @@
+{
+  "users": [
+    {
+      "name": "Asha Rao",
+      "email": "asha@example.com",
+      "password": "supersecret123",
+      "company_name": "Ordinex Labs"
+    },
+    {
+      "name": "Dup User",
+      "email": "dup@example.com",
+      "password": "supersecret123",
+      "company_name": null
+    },
+    {
+      "name": "Temp User",
+      "email": "temp@example.com",
+      "password": "supersecret123",
+      "company_name": null
+    },
+    {
+      "name": "Marcus Tan",
+      "email": "marcus.tan@brightledger.sg",
+      "password": "supersecret123",
+      "company_name": "BrightLedger Pte Ltd"
+    },
+    {
+      "name": "Fatima Al Suwaidi",
+      "email": "fatima@nexpay.ae",
+      "password": "supersecret123",
+      "company_name": "NexPay Financial Services"
+    },
+    {
+      "name": "Priya Nair",
+      "email": "priya@aarambh.in",
+      "password": "supersecret123",
+      "company_name": "Aarambh FinTech Pvt Ltd"
+    }
+  ],
+  "companies": [
+    {
+      "key": "ordinex-labs",
+      "name": "Ordinex Labs",
+      "country": "Global (multi-jurisdiction)",
+      "user_email": "asha@example.com",
+      "description": "Internal compliance team piloting the platform across all three supported jurisdictions at once."
+    },
+    {
+      "key": "brightledger",
+      "name": "BrightLedger Pte Ltd",
+      "country": "Singapore",
+      "user_email": "marcus.tan@brightledger.sg",
+      "description": "A Singapore-based fintech subject to the PDPA, the Cybersecurity Act, and MAS AML rules."
+    },
+    {
+      "key": "nexpay",
+      "name": "NexPay Financial Services",
+      "country": "UAE",
+      "user_email": "fatima@nexpay.ae",
+      "description": "A UAE payments company subject to the PDPL, the Cybercrimes Law, and the AML/CFT decree-law."
+    },
+    {
+      "key": "aarambh",
+      "name": "Aarambh FinTech Pvt Ltd",
+      "country": "India",
+      "user_email": "priya@aarambh.in",
+      "description": "An Indian digital lending startup subject to the DPDPA, the IT Act, and the PMLA."
+    }
+  ],
+  "regulations": [
+    {
+      "ref": "IN-DP-1",
+      "country": "India",
+      "law": "Digital Personal Data Protection Act, 2023",
+      "category": "Data Privacy",
+      "clause": "Consent to process personal data must be free, specific, informed, unconditional, and unambiguous, given through a clear affirmative action, and limited to the data necessary for the specified purpose (Section 6).",
+      "risk_level": "High"
+    },
+    {
+      "ref": "IN-DP-2",
+      "country": "India",
+      "law": "Digital Personal Data Protection Act, 2023",
+      "category": "Data Privacy",
+      "clause": "A Data Principal has the right to withdraw consent at any time, with the withdrawal process being as easy as giving consent; withdrawal does not affect the legality of prior processing (Section 6(4)-(5)).",
+      "risk_level": "Medium"
+    },
+    {
+      "ref": "IN-DP-3",
+      "country": "India",
+      "law": "Digital Personal Data Protection Act, 2023",
+      "category": "Data Privacy",
+      "clause": "Personal data may be processed without consent under a closed list of nine 'legitimate uses' specified in the Act, such as the State providing a subsidy, benefit, or service to the Data Principal (Section 7).",
+      "risk_level": "Medium"
+    },
+    {
+      "ref": "IN-DP-4",
+      "country": "India",
+      "law": "Digital Personal Data Protection Act, 2023",
+      "category": "Data Privacy",
+      "clause": "Before processing the personal data of a child or a person with a disability, the Data Fiduciary must obtain verifiable consent from the parent or lawful guardian (Section 9(1)).",
+      "risk_level": "High"
+    },
+    {
+      "ref": "IN-CY-1",
+      "country": "India",
+      "law": "Information Technology Act, 2000",
+      "category": "Cybersecurity",
+      "clause": "A body corporate that possesses or handles sensitive personal data must implement and maintain reasonable security practices and procedures; negligence resulting in wrongful loss or gain makes it liable to pay compensation (Section 43A).",
+      "risk_level": "Critical"
+    },
+    {
+      "ref": "IN-CY-2",
+      "country": "India",
+      "law": "Information Technology Act, 2000",
+      "category": "Cybersecurity",
+      "clause": "Unauthorized access to, or downloading, copying, or damaging of, a computer, computer system, or computer network attracts penalty and compensation liability (Section 43).",
+      "risk_level": "High"
+    },
+    {
+      "ref": "IN-CY-3",
+      "country": "India",
+      "law": "Information Technology Act, 2000",
+      "category": "Cybersecurity",
+      "clause": "Dishonestly or fraudulently committing any act specified under Section 43 (e.g. hacking, data theft) is a punishable criminal offence (Section 66).",
+      "risk_level": "Critical"
+    },
+    {
+      "ref": "IN-CY-4",
+      "country": "India",
+      "law": "Information Technology Act, 2000",
+      "category": "Cybersecurity",
+      "clause": "Disclosure of personal information obtained under a lawful contract, made without the consent of the person concerned and with intent to cause wrongful loss, is punishable with imprisonment or fine (Section 72A).",
+      "risk_level": "High"
+    },
+    {
+      "ref": "IN-FI-1",
+      "country": "India",
+      "law": "Prevention of Money Laundering Act, 2002",
+      "category": "Finance",
+      "clause": "At the commencement of an account-based relationship involving Rs. 50,000 or more, reporting entities must conduct customer due diligence, including verifying the client's identity, source of funds, and the purpose of the relationship (PML Rule 9(1)).",
+      "risk_level": "High"
+    },
+    {
+      "ref": "IN-FI-2",
+      "country": "India",
+      "law": "Prevention of Money Laundering Act, 2002",
+      "category": "Finance",
+      "clause": "Reporting entities must maintain records of all transactions, including the identity of the parties and the nature and value of each transaction, for the period prescribed under the Act.",
+      "risk_level": "Medium"
+    },
+    {
+      "ref": "IN-FI-3",
+      "country": "India",
+      "law": "Prevention of Money Laundering Act, 2002",
+      "category": "Finance",
+      "clause": "Where enhanced due diligence is applied to a suspicious or high-risk client relationship, the information obtained must be retained for five years from the date of the transaction.",
+      "risk_level": "Medium"
+    },
+    {
+      "ref": "AE-DP-1",
+      "country": "UAE",
+      "law": "Federal Decree-Law No. 45 of 2021 (Personal Data Protection Law)",
+      "category": "Data Privacy",
+      "clause": "Processing personal data without the consent of the data subject is prohibited, except in specified cases such as public interest, legitimate claims, or legal obligations.",
+      "risk_level": "High"
+    },
+    {
+      "ref": "AE-DP-2",
+      "country": "UAE",
+      "law": "Federal Decree-Law No. 45 of 2021 (Personal Data Protection Law)",
+      "category": "Data Privacy",
+      "clause": "Controllers must appoint a Data Protection Officer where processing involves large-scale sensitive personal data or systematic monitoring of data subjects.",
+      "risk_level": "Medium"
+    },
+    {
+      "ref": "AE-DP-3",
+      "country": "UAE",
+      "law": "Federal Decree-Law No. 45 of 2021 (Personal Data Protection Law)",
+      "category": "Data Privacy",
+      "clause": "Personal data may only be transferred outside the UAE where the recipient jurisdiction ensures an adequate level of protection, or a specific exception applies (e.g. the transfer is necessary to establish or defend a legal claim).",
+      "risk_level": "High"
+    },
+    {
+      "ref": "AE-DP-4",
+      "country": "UAE",
+      "law": "Federal Law No. 15 of 2020 (Consumer Protection Law)",
+      "category": "Data Privacy",
+      "clause": "Suppliers are prohibited from using consumers' personal data for marketing purposes without their consent.",
+      "risk_level": "Medium"
+    },
+    {
+      "ref": "AE-DP-5",
+      "country": "UAE",
+      "law": "Federal Decree-Law No. 44 of 2021 (Establishment of the UAE Data Office)",
+      "category": "Data Privacy",
+      "clause": "The UAE Data Office is established as the federal authority responsible for overseeing and enforcing compliance with the Personal Data Protection Law.",
+      "risk_level": "Low"
+    },
+    {
+      "ref": "AE-CY-1",
+      "country": "UAE",
+      "law": "Federal Decree-Law No. 34 of 2021 (Cybercrimes Law)",
+      "category": "Cybersecurity",
+      "clause": "Unauthorized access to, or interference with, a website or electronic information system is a criminal offense; organizations must implement safeguards to prevent unauthorized intrusion.",
+      "risk_level": "Critical"
+    },
+    {
+      "ref": "AE-CY-2",
+      "country": "UAE",
+      "law": "Central Bank of the UAE — Information Security Standards",
+      "category": "Cybersecurity",
+      "clause": "Banks and other regulated financial institutions must implement information security controls to protect the confidentiality and integrity of banking information, as directed by the Central Bank (a sector-level requirement rather than a single named statute).",
+      "risk_level": "High"
+    },
+    {
+      "ref": "AE-FI-1",
+      "country": "UAE",
+      "law": "Federal Decree-Law No. 10 of 2025 (Anti-Money Laundering, Combating the Financing of Terrorism and Proliferation Financing)",
+      "category": "Finance",
+      "clause": "Financial institutions and designated non-financial businesses must conduct Customer Due Diligence (CDD) to identify and verify customers and beneficial owners before establishing a business relationship, and report suspicious transactions.",
+      "risk_level": "High"
+    },
+    {
+      "ref": "AE-FI-2",
+      "country": "UAE",
+      "law": "Federal Decree-Law No. 10 of 2025 (Anti-Money Laundering, Combating the Financing of Terrorism and Proliferation Financing)",
+      "category": "Finance",
+      "clause": "Knowingly providing false or misleading information about a Beneficial Owner to a competent authority or financial institution is punishable by imprisonment and a fine of not less than AED 20,000.",
+      "risk_level": "High"
+    },
+    {
+      "ref": "AE-FI-3",
+      "country": "UAE",
+      "law": "Federal Decree-Law No. 10 of 2025 (Anti-Money Laundering, Combating the Financing of Terrorism and Proliferation Financing)",
+      "category": "Finance",
+      "clause": "Financial institutions must report suspicious transactions to the UAE Financial Intelligence Unit for analysis and referral to the competent authorities.",
+      "risk_level": "High"
+    },
+    {
+      "ref": "SG-DP-1",
+      "country": "Singapore",
+      "law": "Personal Data Protection Act 2012 (PDPA)",
+      "category": "Data Privacy",
+      "clause": "Organisations must notify the Personal Data Protection Commission (PDPC) as soon as practicable, and no later than 3 calendar days, after determining that a data breach is notifiable.",
+      "risk_level": "Critical"
+    },
+    {
+      "ref": "SG-DP-2",
+      "country": "Singapore",
+      "law": "Personal Data Protection Act 2012 (PDPA)",
+      "category": "Data Privacy",
+      "clause": "A data breach is notifiable if it results in, or is likely to result in, significant harm to an affected individual, or if it affects, or is likely to affect, 500 or more individuals.",
+      "risk_level": "High"
+    },
+    {
+      "ref": "SG-DP-3",
+      "country": "Singapore",
+      "law": "Personal Data Protection Act 2012 (PDPA)",
+      "category": "Data Privacy",
+      "clause": "Organisations may rely on 'deemed consent by notification' or 'deemed consent by contractual necessity' as alternative bases for processing personal data, subject to providing notice and an opt-out period.",
+      "risk_level": "Medium"
+    },
+    {
+      "ref": "SG-DP-4",
+      "country": "Singapore",
+      "law": "Personal Data Protection Act 2012 (PDPA)",
+      "category": "Data Privacy",
+      "clause": "Serious breaches of the PDPA may result in financial penalties of up to S$1 million or 10% of the organisation's annual turnover in Singapore, whichever is higher.",
+      "risk_level": "High"
+    },
+    {
+      "ref": "SG-CY-1",
+      "country": "Singapore",
+      "law": "Cybersecurity Act 2018",
+      "category": "Cybersecurity",
+      "clause": "Owners of Critical Information Infrastructure (CII) must comply with cybersecurity codes of practice, conduct regular audits and risk assessments, and report cybersecurity incidents to the Cyber Security Agency (CSA).",
+      "risk_level": "High"
+    },
+    {
+      "ref": "SG-CY-2",
+      "country": "Singapore",
+      "law": "Cybersecurity Act 2018",
+      "category": "Cybersecurity",
+      "clause": "Owners of Critical Information Infrastructure must report a prescribed cybersecurity incident to the Commissioner of Cybersecurity within the prescribed period (Section 14(1)).",
+      "risk_level": "Critical"
+    },
+    {
+      "ref": "SG-CY-3",
+      "country": "Singapore",
+      "law": "Cybersecurity (Amendment) Act 2024",
+      "category": "Cybersecurity",
+      "clause": "The Act extends cybersecurity obligations to Systems of Temporary Cybersecurity Concern (STCC) and Entities of Special Cybersecurity Interest (ESCI), in addition to traditional Critical Information Infrastructure owners.",
+      "risk_level": "Medium"
+    },
+    {
+      "ref": "SG-FI-1",
+      "country": "Singapore",
+      "law": "MAS Notice 626 (Prevention of Money Laundering and Countering the Financing of Terrorism – Banks)",
+      "category": "Finance",
+      "clause": "Banks must conduct risk-based Customer Due Diligence, including identifying and verifying customers and beneficial owners, and file Suspicious Transaction Reports with the Suspicious Transaction Reporting Office (STRO).",
+      "risk_level": "High"
+    },
+    {
+      "ref": "SG-FI-2",
+      "country": "Singapore",
+      "law": "MAS Notice 626 (Prevention of Money Laundering and Countering the Financing of Terrorism – Banks)",
+      "category": "Finance",
+      "clause": "A Suspicious Transaction Report must be filed no later than 1 business day after the bank concludes that filing is warranted.",
+      "risk_level": "High"
+    },
+    {
+      "ref": "SG-FI-3",
+      "country": "Singapore",
+      "law": "MAS Notice 626 (Prevention of Money Laundering and Countering the Financing of Terrorism – Banks)",
+      "category": "Finance",
+      "clause": "Banks must retain customer due diligence and transaction records for five years from the end of the customer relationship.",
+      "risk_level": "Medium"
+    },
+    {
+      "ref": "SG-FI-4",
+      "country": "Singapore",
+      "law": "MAS Notice 626 (Prevention of Money Laundering and Countering the Financing of Terrorism – Banks)",
+      "category": "Finance",
+      "clause": "Enhanced Due Diligence must be applied to higher-risk relationships, including politically exposed persons, customers from high-risk jurisdictions, and complex ownership structures.",
+      "risk_level": "High"
+    }
+  ],
+  "policies": [
+    {
+      "key": "P1",
+      "company": "ordinex-labs",
+      "file_name": "employee-data-privacy-policy.pdf",
+      "content_type": "application/pdf",
+      "file_size_bytes": 184320,
+      "status": "Analyzed",
+      "days_ago": 30,
+      "scenario": "Clean policy, high compliance score, no violations."
+    },
+    {
+      "key": "P2",
+      "company": "ordinex-labs",
+      "file_name": "cross-border-data-transfer-policy.docx",
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "file_size_bytes": 92160,
+      "status": "Analyzed",
+      "days_ago": 25,
+      "scenario": "Worst-case policy: violations across all 3 jurisdictions at once."
+    },
+    {
+      "key": "P4",
+      "company": "ordinex-labs",
+      "file_name": "cybersecurity-incident-response-plan.docx",
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "file_size_bytes": 76800,
+      "status": "Pending Analysis",
+      "days_ago": 2,
+      "scenario": "Analysis requested but not yet completed."
+    },
+    {
+      "key": "P5",
+      "company": "ordinex-labs",
+      "file_name": "vendor-data-processing-agreement.pdf",
+      "content_type": "application/pdf",
+      "file_size_bytes": 143360,
+      "status": "Uploaded",
+      "days_ago": 1,
+      "scenario": "Just uploaded, analysis not requested yet."
+    },
+    {
+      "key": "P8",
+      "company": "ordinex-labs",
+      "file_name": "legacy-privacy-policy-v1.pdf",
+      "content_type": "application/pdf",
+      "file_size_bytes": 71680,
+      "status": "Analyzed",
+      "days_ago": 60,
+      "scenario": "Re-scanned: improves from high-risk 42 to low-risk 81 after remediation."
+    },
+    {
+      "key": "P_EDGE1",
+      "company": "ordinex-labs",
+      "file_name": "🔒 Global Data Retention & Security Policy (Q4 2026 — FINAL, reviewed, board-approved).pdf",
+      "content_type": "application/pdf",
+      "file_size_bytes": 20971519,
+      "status": "Analyzed",
+      "days_ago": 15,
+      "scenario": "Edge case: emoji + punctuation in filename, file size 1 byte under the 20MB upload limit."
+    },
+    {
+      "key": "P6",
+      "company": "brightledger",
+      "file_name": "consumer-marketing-consent-policy.pdf",
+      "content_type": "application/pdf",
+      "file_size_bytes": 61440,
+      "status": "Analyzed",
+      "days_ago": 45,
+      "scenario": "Re-scanned: improves from borderline-low 80 to a perfect 100."
+    },
+    {
+      "key": "P_BL2",
+      "company": "brightledger",
+      "file_name": "critical-information-infrastructure-resilience-plan.pdf",
+      "content_type": "application/pdf",
+      "file_size_bytes": 205000,
+      "status": "Analyzed",
+      "days_ago": 33,
+      "scenario": "Medium-risk CII resilience gap."
+    },
+    {
+      "key": "P_BL3",
+      "company": "brightledger",
+      "file_name": "customer-due-diligence-and-str-procedure.docx",
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "file_size_bytes": 88000,
+      "status": "Analyzed",
+      "days_ago": 27,
+      "scenario": "MAS STR timeline gap."
+    },
+    {
+      "key": "P_BL4",
+      "company": "brightledger",
+      "file_name": "data-breach-response-playbook.pdf",
+      "content_type": "application/pdf",
+      "file_size_bytes": 134000,
+      "status": "Analyzed",
+      "days_ago": 38,
+      "scenario": "Minor PDPA threshold clarity gap, otherwise clean."
+    },
+    {
+      "key": "P_BL5",
+      "company": "brightledger",
+      "file_name": "annual-cybersecurity-audit-report-2025-2026-comprehensive-review-and-remediation-tracking-document-final-version-v3.pdf",
+      "content_type": "application/pdf",
+      "file_size_bytes": 512000,
+      "status": "Pending Analysis",
+      "days_ago": 3,
+      "scenario": "Edge case: very long filename."
+    },
+    {
+      "key": "P7",
+      "company": "nexpay",
+      "file_name": "kyc-onboarding-procedure.docx",
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "file_size_bytes": 102400,
+      "status": "Failed",
+      "days_ago": 10,
+      "scenario": "Analysis pipeline failed; no report; needs re-upload."
+    },
+    {
+      "key": "P_NP2",
+      "company": "nexpay",
+      "file_name": "personal-data-protection-officer-appointment-policy.pdf",
+      "content_type": "application/pdf",
+      "file_size_bytes": 51200,
+      "status": "Analyzed",
+      "days_ago": 22,
+      "scenario": "DPO appointment not confirmed."
+    },
+    {
+      "key": "P_NP3",
+      "company": "nexpay",
+      "file_name": "cross-border-payment-data-transfer-agreement.docx",
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "file_size_bytes": 97000,
+      "status": "Analyzed",
+      "days_ago": 17,
+      "scenario": "High-risk: no adequacy assessment or CDD before overseas transfer."
+    },
+    {
+      "key": "P_NP4",
+      "company": "nexpay",
+      "file_name": "beneficial-ownership-verification-procedure.pdf",
+      "content_type": "application/pdf",
+      "file_size_bytes": 63000,
+      "status": "Analyzed",
+      "days_ago": 12,
+      "scenario": "Worst-case: missing beneficial-ownership verification step, critical AML exposure."
+    },
+    {
+      "key": "P_NP5",
+      "company": "nexpay",
+      "file_name": "معايير-أمن-المعلومات.pdf",
+      "content_type": "application/pdf",
+      "file_size_bytes": 512,
+      "status": "Uploaded",
+      "days_ago": 1,
+      "scenario": "Edge case: Arabic (unicode) filename, tiny file size."
+    },
+    {
+      "key": "P3",
+      "company": "aarambh",
+      "file_name": "aml-compliance-manual.pdf",
+      "content_type": "application/pdf",
+      "file_size_bytes": 512000,
+      "status": "Analyzed",
+      "days_ago": 20,
+      "scenario": "Re-scanned: improves from a borderline 50 to 68 after a partial fix."
+    },
+    {
+      "key": "P_AR2",
+      "company": "aarambh",
+      "file_name": "digital-lending-consent-framework.pdf",
+      "content_type": "application/pdf",
+      "file_size_bytes": 145000,
+      "status": "Analyzed",
+      "days_ago": 28,
+      "scenario": "Edge case: score 0 — total non-compliance, consent bundled with loan approval."
+    },
+    {
+      "key": "P_AR3",
+      "company": "aarambh",
+      "file_name": "child-data-processing-safeguards.docx",
+      "content_type": "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "file_size_bytes": 71000,
+      "status": "Analyzed",
+      "days_ago": 19,
+      "scenario": "No age verification / parental consent flow."
+    },
+    {
+      "key": "P_AR4",
+      "company": "aarambh",
+      "file_name": "incident-response-and-breach-notification-sop.pdf",
+      "content_type": "application/pdf",
+      "file_size_bytes": 98000,
+      "status": "Analyzed",
+      "days_ago": 14,
+      "scenario": "Clean policy, low risk."
+    },
+    {
+      "key": "P_AR5",
+      "company": "aarambh",
+      "file_name": "empty-draft-policy.pdf",
+      "content_type": "application/pdf",
+      "file_size_bytes": 12,
+      "status": "Uploaded",
+      "days_ago": 1,
+      "scenario": "Edge case: near-zero file size (12 bytes)."
+    }
+  ],
+  "compliance_reports": [
+    {
+      "policy_key": "P1",
+      "score": 92,
+      "days_ago": 28,
+      "violations": [],
+      "recommendations": [
+        "No further action required; continue periodic reviews."
+      ]
+    },
+    {
+      "policy_key": "P2",
+      "score": 38,
+      "days_ago": 23,
+      "violations": [
+        {
+          "regulation_ref": "IN-DP-1",
+          "clause": "Section 6 — Consent",
+          "description": "Cross-border transfer clause does not obtain specific consent for international transfers of personal data.",
+          "severity": "High"
+        },
+        {
+          "regulation_ref": "AE-DP-1",
+          "clause": "Processing Consent",
+          "description": "Policy permits transfer of UAE customer data to third-party processors without documented consent or an approved transfer mechanism.",
+          "severity": "Critical"
+        },
+        {
+          "regulation_ref": "SG-DP-1",
+          "clause": "Data Breach Notification",
+          "description": "No documented procedure for notifying the PDPC within the required 3-calendar-day window after a breach is assessed as notifiable.",
+          "severity": "High"
+        }
+      ],
+      "recommendations": [
+        "Add an explicit consent mechanism for cross-border transfers.",
+        "Define an approved transfer safeguard (e.g. standard contractual clauses) for UAE data flows.",
+        "Document a breach assessment and PDPC notification procedure with clear ownership and timelines."
+      ]
+    },
+    {
+      "policy_key": "P3",
+      "score": 50,
+      "days_ago": 18,
+      "violations": [
+        {
+          "regulation_ref": "IN-FI-2",
+          "clause": "Transaction Record Maintenance",
+          "description": "AML manual does not document the specific transaction records retained for client identity verification.",
+          "severity": "Medium"
+        }
+      ],
+      "recommendations": [
+        "Document the specific transaction and identity records retained for each client relationship."
+      ]
+    },
+    {
+      "policy_key": "P3",
+      "score": 68,
+      "days_ago": 5,
+      "violations": [
+        {
+          "regulation_ref": "IN-FI-1",
+          "clause": "KYC / Customer Due Diligence",
+          "description": "Manual does not specify a re-KYC schedule for high-risk customers as recommended under RBI master directions.",
+          "severity": "Medium"
+        }
+      ],
+      "recommendations": [
+        "Add a risk-tiered re-KYC schedule (e.g. every 2 years for high-risk customers)."
+      ]
+    },
+    {
+      "policy_key": "P6",
+      "score": 80,
+      "days_ago": 40,
+      "violations": [],
+      "recommendations": [
+        "Borderline low-risk; verify data retention schedule at next review."
+      ]
+    },
+    {
+      "policy_key": "P6",
+      "score": 100,
+      "days_ago": 7,
+      "violations": [],
+      "recommendations": []
+    },
+    {
+      "policy_key": "P8",
+      "score": 42,
+      "days_ago": 55,
+      "violations": [
+        {
+          "regulation_ref": "IN-DP-1",
+          "clause": "Section 6 — Consent",
+          "description": "Consent language is bundled with general terms of service and does not allow a clear affirmative opt-in.",
+          "severity": "High"
+        },
+        {
+          "regulation_ref": "IN-CY-1",
+          "clause": "Section 43A — Reasonable Security Practices",
+          "description": "No documented technical or organizational security measures for sensitive personal data.",
+          "severity": "Critical"
+        }
+      ],
+      "recommendations": [
+        "Separate consent from general terms of service with a clear affirmative action.",
+        "Document technical and organizational security measures (encryption, access controls, audit logging)."
+      ]
+    },
+    {
+      "policy_key": "P8",
+      "score": 81,
+      "days_ago": 12,
+      "violations": [],
+      "recommendations": [
+        "Maintain current controls and re-assess at the next policy review cycle."
+      ]
+    },
+    {
+      "policy_key": "P_EDGE1",
+      "score": 55,
+      "days_ago": 13,
+      "violations": [
+        {
+          "regulation_ref": "IN-CY-1",
+          "clause": "Section 43A — Reasonable Security Practices",
+          "description": "Global policy does not specify India-specific reasonable security practices required for sensitive personal data.",
+          "severity": "High"
+        },
+        {
+          "regulation_ref": "AE-CY-1",
+          "clause": "Unauthorized Access Safeguards",
+          "description": "No documented technical controls preventing unauthorized access to the UAE payment gateway environment.",
+          "severity": "Critical"
+        },
+        {
+          "regulation_ref": "SG-CY-1",
+          "clause": "CII Codes of Practice",
+          "description": "Singapore entity has not conducted the annual cybersecurity risk assessment required for CII owners.",
+          "severity": "Medium"
+        }
+      ],
+      "recommendations": [
+        "Add a jurisdiction-specific security practices annex for each operating entity.",
+        "Document technical access controls for the UAE payment environment.",
+        "Schedule and document the Singapore annual cybersecurity risk assessment."
+      ]
+    },
+    {
+      "policy_key": "P_BL2",
+      "score": 60,
+      "days_ago": 30,
+      "violations": [
+        {
+          "regulation_ref": "SG-CY-2",
+          "clause": "Section 14(1) — Incident Reporting",
+          "description": "Resilience plan does not define the prescribed reporting period for notifying the Commissioner of Cybersecurity after a qualifying incident.",
+          "severity": "Medium"
+        }
+      ],
+      "recommendations": [
+        "Add explicit incident reporting timelines aligned to Section 14(1) of the Cybersecurity Act."
+      ]
+    },
+    {
+      "policy_key": "P_BL3",
+      "score": 74,
+      "days_ago": 24,
+      "violations": [
+        {
+          "regulation_ref": "SG-FI-2",
+          "clause": "STR Filing Timeline",
+          "description": "Procedure does not specify the 1-business-day STR filing deadline after suspicion is confirmed.",
+          "severity": "Medium"
+        }
+      ],
+      "recommendations": [
+        "Add the 1-business-day STR filing deadline to the escalation procedure."
+      ]
+    },
+    {
+      "policy_key": "P_BL4",
+      "score": 88,
+      "days_ago": 35,
+      "violations": [
+        {
+          "regulation_ref": "SG-DP-2",
+          "clause": "Notifiable Breach Thresholds",
+          "description": "Playbook does not clearly define the 500-individual significant-scale threshold for PDPC notification.",
+          "severity": "Low"
+        }
+      ],
+      "recommendations": [
+        "Clarify the significant-scale (500+ individuals) threshold in the assessment checklist."
+      ]
+    },
+    {
+      "policy_key": "P_NP2",
+      "score": 65,
+      "days_ago": 20,
+      "violations": [
+        {
+          "regulation_ref": "AE-DP-2",
+          "clause": "Data Protection Officer Appointment",
+          "description": "Policy does not confirm whether a Data Protection Officer has been formally appointed for large-scale processing of payment data.",
+          "severity": "Medium"
+        }
+      ],
+      "recommendations": [
+        "Formally appoint and document a Data Protection Officer for payment data processing."
+      ]
+    },
+    {
+      "policy_key": "P_NP3",
+      "score": 44,
+      "days_ago": 15,
+      "violations": [
+        {
+          "regulation_ref": "AE-DP-3",
+          "clause": "Cross-Border Transfer Safeguards",
+          "description": "Agreement does not document an adequacy assessment or legal exception for transferring customer payment data outside the UAE.",
+          "severity": "High"
+        },
+        {
+          "regulation_ref": "AE-FI-1",
+          "clause": "Customer Due Diligence",
+          "description": "No documented CDD step before transferring payment data to the overseas processing partner.",
+          "severity": "High"
+        }
+      ],
+      "recommendations": [
+        "Document an adequacy assessment or applicable legal exception for the cross-border transfer.",
+        "Add a CDD checkpoint before onboarding overseas processing partners."
+      ]
+    },
+    {
+      "policy_key": "P_NP4",
+      "score": 30,
+      "days_ago": 9,
+      "violations": [
+        {
+          "regulation_ref": "AE-FI-2",
+          "clause": "Beneficial Ownership Verification",
+          "description": "Procedure lacks a verification step to confirm beneficial ownership declarations before onboarding, risking exposure to the AED 20,000+ penalty for false information.",
+          "severity": "Critical"
+        }
+      ],
+      "recommendations": [
+        "Add a mandatory beneficial ownership verification and sign-off step before onboarding any corporate customer."
+      ]
+    },
+    {
+      "policy_key": "P_AR2",
+      "score": 0,
+      "days_ago": 25,
+      "violations": [
+        {
+          "regulation_ref": "IN-DP-1",
+          "clause": "Section 6 — Consent",
+          "description": "Consent screen bundles data processing consent with loan approval, making consent conditional — a clear violation of the 'unconditional' consent standard.",
+          "severity": "Critical"
+        },
+        {
+          "regulation_ref": "IN-DP-3",
+          "clause": "Section 7 — Legitimate Uses",
+          "description": "Framework incorrectly relies on 'legitimate use' to process marketing data, which does not fall within the closed list of nine legitimate use categories.",
+          "severity": "Critical"
+        }
+      ],
+      "recommendations": [
+        "Complete policy rewrite required before continued processing.",
+        "Decouple consent from loan approval and remove the invalid legitimate-use claim for marketing data."
+      ]
+    },
+    {
+      "policy_key": "P_AR3",
+      "score": 58,
+      "days_ago": 16,
+      "violations": [
+        {
+          "regulation_ref": "IN-DP-4",
+          "clause": "Section 9(1) — Verifiable Parental Consent",
+          "description": "No age-verification or parental consent mechanism is implemented before processing data of users under 18.",
+          "severity": "High"
+        }
+      ],
+      "recommendations": [
+        "Implement age verification and a verifiable parental consent flow before processing any child's data."
+      ]
+    },
+    {
+      "policy_key": "P_AR4",
+      "score": 95,
+      "days_ago": 11,
+      "violations": [],
+      "recommendations": [
+        "No further action required; continue periodic reviews."
+      ]
+    }
+  ],
+  "extra_audit_logs": [
+    {
+      "phantom_policy_id": "6a47c6c188167958d3bc7131",
+      "action": "POLICY_UPLOADED",
+      "details": "Uploaded 'duplicate-quarterly-report.pdf'.",
+      "days_ago": 50
+    },
+    {
+      "phantom_policy_id": "6a47c6c188167958d3bc7131",
+      "action": "POLICY_DELETED",
+      "details": "Removed by compliance admin — duplicate of aml-compliance-manual.pdf. Demonstrates that audit history persists even after the underlying policy document is deleted.",
+      "days_ago": 49
+    },
+    {
+      "policy_key": "P7",
+      "action": "ANALYSIS_FAILED",
+      "details": "NLP pipeline failed to parse file (corrupted DOCX header). Flagged for re-upload. Note: this action type is not produced automatically by the current placeholder pipeline — it's seeded here to demonstrate the failure scenario.",
+      "days_ago": 9
+    },
+    {
+      "phantom_policy_id": "6a47c6c288167958d3bc7132",
+      "action": "POLICY_UPLOADED",
+      "details": "Uploaded 'test-upload-2026-01-15.pdf'.",
+      "days_ago": 35
+    },
+    {
+      "phantom_policy_id": "6a47c6c288167958d3bc7132",
+      "action": "POLICY_DELETED",
+      "details": "Removed — accidentally uploaded wrong file version (NexPay).",
+      "days_ago": 34
+    }
+  ]
+}
